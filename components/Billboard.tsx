@@ -22,9 +22,9 @@ const Billboard = () => {
                 object-cover
                 brightness-[60%]
                 '
-                // autoPlay
-                // muted
-                // loop
+                autoPlay
+                muted
+                loop
                 poster={data?.thumbnailUrl}
                 src={data?.videoUrl}></video>
                 <div className='absolute top-[30%] md:top-[40%] ml-4 md:ml-16'>
