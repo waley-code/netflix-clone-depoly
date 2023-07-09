@@ -10,10 +10,10 @@ interface AccountMenuProps {
 
 
 const AccountMenu: React.FC<AccountMenuProps> = ({ visble}) => {
+    const {data} = useCurrentUser();
     if (!visble) {
         return null;
     }
-    const {data} = useCurrentUser();
     
     return (
         <div className="bg-black w-56 absolute top-14 right-0 py-5 flex-col border-2 border-gray-800 flex">
